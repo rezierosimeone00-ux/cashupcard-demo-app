@@ -1,11 +1,12 @@
-export default function Page() {
+export default function DataPlatformPage() {
   return (
     <div className="space-y-8">
-      <div className="bg-black text-white px-6 py-4 rounded-2xl shadow-md">
-        <h1 className="font-semibold capitalize">Section placeholder</h1>
+      <div className="section-head">
+        <h1 className="font-semibold">Data & Insights Platform</h1>
+        <p className="subtle">Anonymous user and merchant KPIs with conversion graphs.</p>
       </div>
-      <div className="bg-white p-8 rounded-2xl shadow border border-gray-200">
-        <p className="text-gray-700">Placeholder for this module — same style as dashboard.</p>
+      <div className="card p-8 text-center">
+        <a href="/platform/flywheel" className="inline-block bg-black text-white px-5 py-2 rounded hover:bg-gray-800">Open Growth Engine</a>
       </div>
     </div>
   );

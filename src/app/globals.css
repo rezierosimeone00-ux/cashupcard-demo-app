@@ -2,32 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
+:root { color-scheme: light; }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  @apply bg-gradient-to-b from-gray-900 via-gray-800 to-gray-200 text-gray-900 min-h-screen antialiased;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+/* Helpers coerenti col dashboard */
+.card {
+  @apply bg-white border border-gray-200 rounded-2xl shadow;
+}
+.section-head {
+  @apply bg-black text-white px-6 py-4 rounded-2xl shadow-md;
+}
+.subtle {
+  @apply text-sm text-gray-300;
 }

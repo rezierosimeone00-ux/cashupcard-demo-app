@@ -1,11 +1,12 @@
-export default function Page() {
+export default function FlywheelPage() {
   return (
     <div className="space-y-8">
-      <div className="bg-black text-white px-6 py-4 rounded-2xl shadow-md">
-        <h1 className="font-semibold capitalize">Section placeholder</h1>
+      <div className="section-head">
+        <h1 className="font-semibold">Growth Flywheel</h1>
+        <p className="subtle">User → Merchant → Settlement → Referral → New Drop cycle visualized.</p>
       </div>
-      <div className="bg-white p-8 rounded-2xl shadow border border-gray-200">
-        <p className="text-gray-700">Placeholder for this module — same style as dashboard.</p>
+      <div className="card p-8 text-center">
+        <a href="/kpi" className="inline-block bg-black text-white px-5 py-2 rounded hover:bg-gray-800">View KPI Dashboard</a>
       </div>
     </div>
   );

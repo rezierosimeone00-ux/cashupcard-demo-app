@@ -1,11 +1,18 @@
-export default function Page() {
+export default function MerchantDashboardPage() {
   return (
     <div className="space-y-8">
-      <div className="bg-black text-white px-6 py-4 rounded-2xl shadow-md">
-        <h1 className="font-semibold capitalize">Section placeholder</h1>
+      <div className="section-head">
+        <h1 className="font-semibold">Merchant Dashboard</h1>
+        <p className="subtle">Key metrics and performance summary for your store.</p>
       </div>
-      <div className="bg-white p-8 rounded-2xl shadow border border-gray-200">
-        <p className="text-gray-700">Placeholder for this module — same style as dashboard.</p>
+      <div className="card p-8">
+        <ul className="list-disc pl-5 text-gray-700">
+          <li>Active Cards: 432</li>
+          <li>Transactions: 1,287</li>
+          <li>Sales: $48,350</li>
+          <li>Avg Receipt: $37.57</li>
+        </ul>
+        <a href="/merchant/txfeed" className="inline-block bg-black text-white px-5 py-2 mt-4 rounded hover:bg-gray-800">View Transactions</a>
       </div>
     </div>
   );

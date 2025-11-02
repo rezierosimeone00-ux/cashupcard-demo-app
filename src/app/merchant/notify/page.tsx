@@ -1,11 +1,12 @@
-export default function Page() {
+export default function MerchantNotifyPage() {
   return (
     <div className="space-y-8">
-      <div className="bg-black text-white px-6 py-4 rounded-2xl shadow-md">
-        <h1 className="font-semibold capitalize">Section placeholder</h1>
+      <div className="section-head">
+        <h1 className="font-semibold">Merchant Notification</h1>
+        <p className="subtle">Drop Active in Your Area — 24-hour window. Prepare your POS for Cashup transactions.</p>
       </div>
-      <div className="bg-white p-8 rounded-2xl shadow border border-gray-200">
-        <p className="text-gray-700">Placeholder for this module — same style as dashboard.</p>
+      <div className="card p-8 text-center">
+        <a href="/merchant/dashboard" className="inline-block bg-black text-white px-5 py-2 rounded hover:bg-gray-800">View Dashboard</a>
       </div>
     </div>
   );

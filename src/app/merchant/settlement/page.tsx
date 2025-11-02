@@ -1,11 +1,12 @@
-export default function Page() {
+export default function SettlementPage() {
   return (
     <div className="space-y-8">
-      <div className="bg-black text-white px-6 py-4 rounded-2xl shadow-md">
-        <h1 className="font-semibold capitalize">Section placeholder</h1>
+      <div className="section-head">
+        <h1 className="font-semibold">Settlement Dashboard</h1>
+        <p className="subtle">$80 → Cashup (Stripe) → $100 spend → −8% fee → $72 payout to merchant.</p>
       </div>
-      <div className="bg-white p-8 rounded-2xl shadow border border-gray-200">
-        <p className="text-gray-700">Placeholder for this module — same style as dashboard.</p>
+      <div className="card p-8 text-center">
+        <a href="/platform/data" className="inline-block bg-black text-white px-5 py-2 rounded hover:bg-gray-800">View Insights</a>
       </div>
     </div>
   );

@@ -1,11 +1,16 @@
-export default function Page() {
+export default function RegisterPage() {
   return (
     <div className="space-y-8">
-      <div className="bg-black text-white px-6 py-4 rounded-2xl shadow-md">
-        <h1 className="font-semibold capitalize">Section placeholder</h1>
+      <div className="section-head">
+        <h1 className="font-semibold">User Registration</h1>
+        <p className="subtle">Map your postal code to an H3 cell and enter the demo.</p>
       </div>
-      <div className="bg-white p-8 rounded-2xl shadow border border-gray-200">
-        <p className="text-gray-700">Placeholder for this module — same style as dashboard.</p>
+      <div className="card p-8 max-w-md">
+        <form className="space-y-4">
+          <input className="border p-2 w-full rounded" placeholder="Full Name" />
+          <input className="border p-2 w-full rounded" placeholder="Postal Code" />
+          <a href="/user/drop" className="block bg-black text-white text-center py-2 rounded hover:bg-gray-800 transition">Access Drop</a>
+        </form>
       </div>
     </div>
   );

@@ -1,12 +1,9 @@
-export default function Page() {
+export default function AboutPage() {
   return (
-    <div className="space-y-8">
-      <div className="bg-black text-white px-6 py-4 rounded-2xl shadow-md">
-        <h1 className="font-semibold capitalize">Section placeholder</h1>
-      </div>
-      <div className="bg-white p-8 rounded-2xl shadow border border-gray-200">
-        <p className="text-gray-700">Placeholder for this module — same style as dashboard.</p>
-      </div>
+    <div className="text-center space-y-6">
+      <h1 className="text-4xl font-bold text-white">Cashup Card</h1>
+      <p className="text-gray-100/80 text-lg">AI-powered instant uplift for everyday spending.</p>
+      <p className="text-sm text-gray-200/70">TRL-5 Unified Demo — 2025 Edition</p>
     </div>
   );
 }
